@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>http4s + TypeScript</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 480px; margin: 3rem auto; padding: 0 1rem; }
+    form { display: flex; gap: .5rem; }
+    input { flex: 1; padding: .4rem; }
+    ul { list-style: none; padding: 0; }
+    li { display: flex; justify-content: space-between; padding: .4rem 0; border-bottom: 1px solid #ddd; }
+    li span { cursor: pointer; }
+    li.done span { text-decoration: line-through; color: #888; }
+    button { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Todos</h1>
+  <p id="greeting">Loading…</p>
+  <form id="todo-form">
+    <input id="todo-title" placeholder="What needs doing?" autocomplete="off" />
+    <button type="submit">Add</button>
+  </form>
+  <ul id="todo-list"></ul>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
